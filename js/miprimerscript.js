@@ -70,10 +70,10 @@ var snacktodalavida = (restovida * 365) * comer;
 var precio;
 var gastototal;
 
-alert("Deberas tener "+ snacktodalavida +" ... "+ snack + " para que te alcancen todos "+edadXvivir+ " años.");
+alert("Deberas tener "+ snacktodalavida +" ... "+ snack + "es para que te alcancen todos "+edadXvivir+ " años.");
 
 precio = prompt("¿Cual es el precio?");
 gastototal = snacktodalavida * precio;
-alert("Compraras $"+gastototal+" en snacks por el resto de tu vida.");
+alert("Compraras $"+gastototal+" en comida por el resto de tu vida.");
 
 
