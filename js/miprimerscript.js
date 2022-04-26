@@ -53,5 +53,27 @@ var edad =  2022 - AnioNacimiento;
 var mayorEdad = Number(AnioNacimiento) +18;
 alert("Tu edad es:"  +  edad);
 alert("Cumpliste 18 años en: " + mayorEdad);
+alert("Ahora los ejercicios asincronicos");
+//Ejercicio asincronico parte 1
+
+var edad = prompt("ingrese su edad");
+var vida = edad * 365;
+alert("Viviste "+vida+ " dias.")
+alert("segundo ejercicio asincronico");
+var edad = prompt("¿Cual es tu edad?")
+// Edad maxima de vida.
+var edadXvivir = prompt("¿Tu edad maxima de vida?");
+var snack = prompt("¿Cual es tu snack favorito?");
+var comer = prompt("¿Cuanto comerias por día?");
+var restovida = edadXvivir - edad;
+var snacktodalavida = (restovida * 365) * comer;
+var precio;
+var gastototal;
+
+alert("Deberas tener "+ snacktodalavida +" ... "+ snack + " para que te alcancen todos "+edadXvivir+ " años.");
+
+precio = prompt("¿Cual es el precio?");
+gastototal = snacktodalavida * precio;
+alert("Compraras $"+gastototal+" en snacks por el resto de tu vida.");
 
 
