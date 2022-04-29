@@ -41,3 +41,24 @@ while(palabra!="chau"){
     }
 }
 alert("fin");
+
+//promedio de notas
+var sumaNotas=0;
+var contadorNotas=0;
+var nota;
+while(nota!=0){
+    nota=Number(promt("Ingrese una nota cero para salir"));
+    if(nota!=0){
+        sumaNotas+=nota;
+        contadorNotas++;
+    }
+}
+var promedio = sumaNotas/contadorNotas;
+alert("promedio=" + promedio);
+
+//funciones matematicas
+
+console.log(Math.PI);
+console.log(Math.E);
+console.log(Math.random());
+console.log(Ma)
