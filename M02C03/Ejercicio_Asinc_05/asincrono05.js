@@ -45,4 +45,4 @@ if(usuario=="piedra"){
         //empatados
         console.log("Quedan empatados");
     }
-}
+}//ahi termina el ejercicio
