@@ -64,7 +64,7 @@ return resultado;
 console.log(darVuelta("hola comop estas"));
 
 function darVuelta2(arreglo){
-    let resultado=[]:
+    let resultado=[];
     for(i=0;i<arreglo.length;i++){
         resultado.unshift(arreglo[i]);
     }
