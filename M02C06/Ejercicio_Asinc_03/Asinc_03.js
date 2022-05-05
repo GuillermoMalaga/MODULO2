@@ -7,9 +7,9 @@ function arregloObjetos(palabra, numero){
     var result=[];
     //for para cargar el arreglo
     for (let i = 0; i < numero; i++) {
-        new obj();
-        obj.prototype.palabra=i;
-        result.push=obj;        
+        var obj={};
+        obj[palabra]=i;
+        result.push(obj);        
     }
     return result;
 }
