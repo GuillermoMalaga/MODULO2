@@ -56,13 +56,11 @@ function mostrarTiempoAumnetado(){
 //creacion del evento par ainput
 var cajaTexto = document.querySelector("#text");
 cajaTexto.addEventListener("keyup",(e)=>{
-    if(e.key=="Enter"){        
-        console.log("se presiono enter");        
-        console.log(palabraAleatoria);
-        console.log(cajaTexto.value);
+    if(e.key=="Enter"){                
+        //comparamos palabras ingresada con la del arreglo
         if(palabraAleatoria==cajaTexto.value){
             score++;
-            console.log(score);
+            //aumentamos el tiempo
             time=time+3
             aumentarScore();
             mostrarTiempoAumnetado();
@@ -74,16 +72,19 @@ cajaTexto.addEventListener("keyup",(e)=>{
 });
 //funcion gameover()
 function gameOver(){
+    //se debe completar la funcion
     alert("El tiempo se termino");
 }
 //funcion para actualizar el tiempo
 function actualizarTiempo(){
     time--;
-    if (time === 0) {
+    mostrarTiempoAumnetado();
+    if (time < 0) {
         clearInterval(timeInterval);        
         //Aqui colocar la funcion game over
+        mostrarTiempoAumnetado();
         gameOver();
     }
-    mostrarTiempoAumnetado();
+    //fin de l afuncion
 }
 let timeInterval = setInterval(actualizarTiempo, 1000);
