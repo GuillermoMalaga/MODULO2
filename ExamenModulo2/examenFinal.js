@@ -85,6 +85,6 @@ function actualizarTiempo(){
         mostrarTiempoAumnetado();
         gameOver();
     }
-    //fin de l afuncion
+    //fin de l afuncion 
 }
 let timeInterval = setInterval(actualizarTiempo, 1000);
