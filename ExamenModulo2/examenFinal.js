@@ -73,7 +73,22 @@ cajaTexto.addEventListener("keyup",(e)=>{
 //funcion gameover()
 function gameOver(){
     //se debe completar la funcion
-    alert("El tiempo se termino");
+    //alert("El tiempo se termino");
+    //<button onclick="location.reload()">Volvé a empezar</button>
+    let boton = document.createElement('button'); 
+    boton.type = "button"; 
+    boton.setAttribute("onclick","location.reload()");
+    boton.innerText = 'Vover a Empezar';
+     
+    
+    let h1_game=document.createElement("h1");
+    let parrafo=document.createElement("P");
+    let game=document.querySelector("#end-game-container");
+    parrafo.textContent="Puntaje Obtenido: "+score;
+    h1_game.textContent="Tiempo terminado";
+    game.appendChild(h1_game);
+    game.appendChild(parrafo);
+    game.appendChild(boton);
 }
 //funcion para actualizar el tiempo
 function actualizarTiempo(){
